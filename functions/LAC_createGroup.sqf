@@ -15,10 +15,10 @@ if (_type == "squad") then {
     _units = (selectRandom lac_units_infantry_squad) select _side;
 };
 
-_grp = createGroup _sideReal;
+_group = createGroup _sideReal;
 {
-    _unit = _grp createUnit [_x,_pos,[],0,"FORM"];
+    _unit = _group createUnit [_x,_pos,[],0,"FORM"];
     sleep 0.5;
 } forEach _units;
 
-_grp
+_group

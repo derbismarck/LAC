@@ -20,16 +20,44 @@ lac_comm_checkin_interval = 300;  //amount of time between group-checkins to ove
 // -- LAC Units -- //
 
 lac_units_infantry_ft = [ //defines small (fireteam-sized) infantry group types
+  [
     ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F"],
+    ["B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F"],
+    ["I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F"],
+  ],
+  [
     ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_LAT_F"],
-    ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_Soldier_F"]
+    ["B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F","B_Soldier_LAT_F"],
+    ["I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F","I_Soldier_LAT_F"]
+  ],
+  [
+    ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_LAT_F","O_Soldier_F"],
+    ["B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F","B_Soldier_LAT_F","B_Soldier_F"],
+    ["I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F","I_Soldier_LAT_F","I_Soldier_F"]
+  ]
 ];
 
 lac_units_infantry_squad = [ //defines large (squad-sized) infantry group types
+  [
     ["O_Soldier_SL_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F"],
+    ["B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F","B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F"],
+    ["I_Soldier_SL_F","I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F","I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F"]
+  ],
+  [
     ["O_Soldier_SL_F","O_medic_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F"],
+    ["B_Soldier_SL_F","B_medic_F","B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F","B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F"],
+    ["I_Soldier_SL_F","I_medic_F","I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F","I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F"]
+  ],
+  [
     ["O_Soldier_SL_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F"],
-    ["O_Soldier_SL_F","O_medic_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F"]
+    ["B_Soldier_SL_F","B_Soldier_TL_F","B_HeavyGunner_F","B_Soldier_A_F","B_Soldier_LAT_F","B_Soldier_TL_F","B_HeavyGunner_F","B_Soldier_A_F","B_Soldier_LAT_F"],
+    ["I_Soldier_SL_F","I_Soldier_TL_F","I_HeavyGunner_F","I_Soldier_A_F","I_Soldier_LAT_F","I_Soldier_TL_F","I_HeavyGunner_F","I_Soldier_A_F","I_Soldier_LAT_F"]
+  ],
+  [
+    ["O_Soldier_SL_F","O_medic_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F","O_Soldier_TL_F","O_HeavyGunner_F","O_Soldier_A_F","O_Soldier_LAT_F"],
+    ["B_Soldier_SL_F","B_medic_F","B_Soldier_TL_F","B_HeavyGunner_F","B_Soldier_A_F","B_Soldier_LAT_F","B_Soldier_TL_F","B_HeavyGunner_F","B_Soldier_A_F","B_Soldier_LAT_F"],
+    ["I_Soldier_SL_F","I_medic_F","I_Soldier_TL_F","I_HeavyGunner_F","I_Soldier_A_F","I_Soldier_LAT_F","I_Soldier_TL_F","I_HeavyGunner_F","I_Soldier_A_F","I_Soldier_LAT_F"]
+  ]
 ];
 
 // -- LAC Caching -- //

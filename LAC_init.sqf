@@ -73,6 +73,9 @@ lac_cache_range_los = 1500; //minimum range to start/stop caching if having line
 lac_cache_range_nlos = 500; //minimum range to start/stop caching if not having line-of-sight
 lac_cache_nlos = true;  //non-line-of-sight caching? if false, AI always start/stop being cached at lac_cache_range_los. Can save on performance if the map is very flat or the AO is very small. if true, NLOS ai will cache at ranges between lac_cache_range_los and lac_cache_range_nlos - if they are about to walk into view or come within lac_cache_range_nlos they will un-cache and react normally.
 
+lac_cache_build_rate = 1;	//build up groups at x-seconds per unit
+lac_cache_reduce_rate = 1;	//reduce groups at x-seconds per unit
+
 // - Function Initialization Below - //
 
 [] execVM "LAC\functions\fnc_init.sqf";

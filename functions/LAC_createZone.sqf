@@ -35,3 +35,5 @@ for "_i" from 1 to _squadCount do {
     [_group,_trigger] call LAC_fnc_doPatrol;
     [_group] spawn LAC_fnc_doCache;
 };
+
+hint "One zone completed.";

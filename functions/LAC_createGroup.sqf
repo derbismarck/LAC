@@ -18,7 +18,7 @@ if (_type == "squad") then {
 _group = createGroup _sideReal;
 {
     _unit = _group createUnit [_x,_pos,[],0,"FORM"];
-    sleep 0.5;
+    //sleep 0.5;
 } forEach _units;
 
 _group

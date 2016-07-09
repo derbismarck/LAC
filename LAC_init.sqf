@@ -1,12 +1,14 @@
 // - Params Below - //
 
+lac_playerSide = west;  //DON'T FORGET TO CHANGE!!!
+
 // -- LAC Comms -- //
 // LAC_Comms facilitates realistic communication between AI groups. Depending on what radios they have in ACRE, they will communicate differently to call in threats. They also periodically check-in with other groups, and if they miss a check-in then you can expect enemy patrols to come around all curious-like.
 
 lac_comm_range_343 = [100,true]; //[max range for 343-holding units, LOS blocking]
 lac_comm_range_148 = [400,true]; //[max range for 148-holding units, LOS blocking]
 lac_comm_range_117 = [800,true]; //[max range for 117-holding units, LOS blocking]
-lac_retrans_towers = [];  //not currently implemented - will eventually allow for bridged transmissions (with extra jump time)
+lac_comm_retrans_towers = [];  //not currently implemented - will eventually allow for bridged transmissions (with extra jump time)
 //343s can only talk to other 343s. 148s and 117s can communicate, but are limited by the max range of the the 148 if it is 148->117 or 117->148 communication.
 
 lac_comm_jump_time = [10,30]; //[minimum reporting time, maximum reporting time] - depends on (_unit skill "commanding")

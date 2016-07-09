@@ -1,4 +1,9 @@
-LAC_fnc_createZone =  compile preprocessFile "LAC\functions\LAC_createZone.sqf";
-LAC_fnc_randPos =     compile preprocessFile "LAC\functions\LAC_randPos.sqf";
-LAC_fnc_createGroup = compile preprocessFile "LAC\functions\LAC_createGroup.sqf";
-LAC_fnc_doPatrol    = compile preprocessFile "LAC\functions\LAC_doPatrol.sqf";
+LAC_fnc_createZone      = compile preprocessFile "LAC\functions\LAC_createZone.sqf";
+LAC_fnc_randPos         = compile preprocessFile "LAC\functions\LAC_randPos.sqf";
+LAC_fnc_createGroup     = compile preprocessFile "LAC\functions\LAC_createGroup.sqf";
+LAC_fnc_doPatrol        = compile preprocessFile "LAC\functions\LAC_doPatrol.sqf";
+LAC_fnc_doCache         = compile preprocessFile "LAC\functions\LAC_doCache.sqf";
+LAC_fnc_getPlayers      = compile preprocessFile "LAC\functions\LAC_getPlayers.sqf";
+LAC_fnc_doReduce        = compile preprocessFile "LAC\functions\LAC_doReduce.sqf";
+LAC_fnc_doBuild         = compile preprocessFile "LAC\functions\LAC_doBuild.sqf";
+LAC_fnc_nearestPlayer   = compile preprocessFile "LAC\functions\LAC_nearestPlayer.sqf";

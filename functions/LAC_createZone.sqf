@@ -15,9 +15,12 @@ for "_i" from 1 to _fireteamCount do {
     while {surfaceIsWater _pos || _pos isEqualTo [0,0,0]} do {
         _pos = [_trigger] call LAC_fnc_randPos;
     };
-    _grp = [_side,_pos,"fireteam"] call LAC_fnc_createGroup;
-    _grp setVariable ["LAC_lvar_trigger",_trigger];
-    [_grp,_trigger] call LAC_fnc_doPatrol;
+    _group = [_side,_pos,"fireteam"] call LAC_fnc_createGroup;
+    _group setVariable ["LAC_lvar_trigger",_trigger];
+    _group setVariable ["LAC_lvar_isReduced",false];
+    _group setVariable ["LAC_lvar_cachedUnits",[]];
+    [_group,_trigger] call LAC_fnc_doPatrol;
+    [_group] spawn LAC_fnc_doCache;
 };
 
 for "_i" from 1 to _squadCount do {
@@ -25,7 +28,10 @@ for "_i" from 1 to _squadCount do {
     while {surfaceIsWater _pos || _pos isEqualTo [0,0,0]} do {
         _pos = [_trigger] call LAC_fnc_randPos;
     };
-    _grp = [_side,_pos,"squad"] call LAC_fnc_createGroup;
-    _grp setVariable ["LAC_lvar_trigger",_trigger];
-    [_grp,_trigger] call LAC_fnc_doPatrol;
+    _group = [_side,_pos,"squad"] call LAC_fnc_createGroup;
+    _group setVariable ["LAC_lvar_trigger",_trigger];
+    _group setVariable ["LAC_lvar_isReduced",false];
+    _group setVariable ["LAC_lvar_cachedUnits",[]];
+    [_group,_trigger] call LAC_fnc_doPatrol;
+    [_group] spawn LAC_fnc_doCache;
 };

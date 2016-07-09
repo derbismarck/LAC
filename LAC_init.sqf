@@ -38,3 +38,7 @@ lac_units_infantry_squad = [ //defines large (squad-sized) infantry group types
 lac_cache_range_los = 1500; //minimum range to start/stop caching if having line-of-sight
 lac_cache_range_nlos = 500; //minimum range to start/stop caching if not having line-of-sight
 lac_cache_nlos = true;  //non-line-of-sight caching? if false, AI always start/stop being cached at lac_cache_range_los. Can save on performance if the map is very flat or the AO is very small. if true, NLOS ai will cache at ranges between lac_cache_range_los and lac_cache_range_nlos - if they are about to walk into view or come within lac_cache_range_nlos they will un-cache and react normally.
+
+// - Function Initialization Below - //
+
+[] execVM "functions\fnc_init.sqf";

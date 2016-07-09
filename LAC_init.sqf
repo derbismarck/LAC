@@ -23,7 +23,7 @@ lac_units_infantry_ft = [ //defines small (fireteam-sized) infantry group types
   [
     ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F"],
     ["B_Soldier_TL_F","B_Soldier_AR_F","B_Soldier_AAR_F","B_Soldier_LAT_F"],
-    ["I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F"],
+    ["I_Soldier_TL_F","I_Soldier_AR_F","I_Soldier_AAR_F","I_Soldier_LAT_F"]
   ],
   [
     ["O_Soldier_TL_F","O_Soldier_AR_F","O_Soldier_AAR_F","O_Soldier_LAT_F","O_Soldier_LAT_F"],
@@ -60,6 +60,10 @@ lac_units_infantry_squad = [ //defines large (squad-sized) infantry group types
   ]
 ];
 
+// -- LAC Skill -- //
+
+// TO BE DONE LATER
+
 // -- LAC Caching -- //
 // LAC_Caching deletes units in a group that aren't the group leader as long as the group is outside range of the players as based on the parameters below.
 
@@ -69,4 +73,4 @@ lac_cache_nlos = true;  //non-line-of-sight caching? if false, AI always start/s
 
 // - Function Initialization Below - //
 
-[] execVM "functions\fnc_init.sqf";
+[] execVM "LAC\functions\fnc_init.sqf";

@@ -63,8 +63,53 @@ lac_units_infantry_squad = [ //defines large (squad-sized) infantry group types
 ];
 
 // -- LAC Skill -- //
+// arrays in format [mean of spread, variance around mean];
+// ex. [0.5,0.1] means anywhere from 0.5 - 0.1 to 0.5 + 0.1, or 0.4 to 0.6
 
-// TO BE DONE LATER
+lac_skill_aimingAccuracy = [0.4,0.1];
+lac_skill_aimingShake = [0.4,0.1];
+lac_skill_aimingSpeed = [0.7,0.1];
+lac_skill_endurance = [0.5,0.1];
+lac_skill_spotDistance = [0.5,0.1];
+lac_skill_spotTime = [0.6,0.1];
+lac_skill_courage = [0.4,0.1];
+lac_skill_reloadSpeed = [0.6,0.1];
+lac_skill_commanding = [0.4,0.1];
+
+//lac_skill_modifiers defines a list of classes who should get modifiers to different skills.
+//inside arrays are of format
+/*
+[
+    ["classname 1","classname 2","classname 3", etc],   //effected classes
+    ["skillType",addvalue], //where skillType of one of https://community.bistudio.com/wiki/setSkill_array (except general) and addValue is some modifier to add on top of randomly assigned value for each subskill.
+    more of the above syntax as wanted
+]
+*/
+lac_skill_modifiers = [
+    [
+        ["O_Soldier_SL_F","B_Soldier_SL_F","I_Soldier_SL_F"],
+        ["aimingAccuracy",0.1],
+        ["spotDistance",0.1],
+        ["spotTime",0.1],
+        ["courage",0.2],
+        ["commanding",0.2]
+    ],
+    [
+        ["O_Soldier_TL_F","B_Soldier_TL_F","I_Soldier_TL_F"],
+        ["aimingAccuracy",0.15],
+        ["spotDistance",0.15],
+        ["spotTime",0.15],
+        ["courage",0.15],
+        ["commanding",0.1]
+    ],
+    [
+        ["O_HeavyGunner_F","B_HeavyGunner_F","I_HeavyGunner_F","O_Soldier_AR_F","B_Soldier_AR_F","I_Soldier_AR_F"],
+        ["aimingAccuracy",-0.05],
+        ["aimingSpeed",-0.1],
+        ["spotDistance",-0.05],
+        ["spotTime",-0.05]
+    ]
+];
 
 // -- LAC Caching -- //
 // LAC_Caching deletes units in a group that aren't the group leader as long as the group is outside range of the players as based on the parameters below.

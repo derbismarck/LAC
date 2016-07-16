@@ -7,3 +7,4 @@ LAC_fnc_getPlayers      = compile preprocessFile "LAC\functions\LAC_getPlayers.s
 LAC_fnc_doReduce        = compile preprocessFile "LAC\functions\LAC_doReduce.sqf";
 LAC_fnc_doBuild         = compile preprocessFile "LAC\functions\LAC_doBuild.sqf";
 LAC_fnc_nearestPlayer   = compile preprocessFile "LAC\functions\LAC_nearestPlayer.sqf";
+LAC_fnc_assignSkill     = compile preprocessFile "LAC\functions\LAC_assignSkill.sqf";
